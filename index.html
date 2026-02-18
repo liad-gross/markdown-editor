@@ -14,14 +14,14 @@
   </div>
 
   <!-- Markdown Input -->
-  <textarea id="input" class="form-control mb-3" rows="10"></textarea>
+  <textarea id="input" class="form-control mb-3" rows="10" v-model="message"></textarea>
 
   <!-- Rendered Output -->
-  <div id="output" class="border p-3 mb-3"></div>
+  <div id="output" class="border p-3 mb-3" v-html="htmlOutput"></div>
 
   <!-- Word Counter -->
-  <div id="counter" class="text-muted"></div>
+  <div id="counter" class="text-muted">Characters: {{ charCount }}</div>
 
 </div>
 
-
+<script src="app.js"></script>
