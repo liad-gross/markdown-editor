@@ -1,0 +1,17 @@
+/* Base layout (Mobile first) */
+#app {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#input,
+#output {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    #app {
+        flex-direction: row;
+    }
+}
