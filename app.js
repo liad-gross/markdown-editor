@@ -10,7 +10,7 @@ const app = Vue.createApp({
             return marked.parse(this.message)
         },
         charCount() {
-            return this.htmlOutput.replace(/<[^>]*>/g, '').length
+            return this.htmlOutput.replace(/<[^>]*>/g, '').trim().length
         },
         themeIcon() {
             return this.theme === 'light' ? 'dark_mode' : 'light_mode'
